@@ -480,10 +480,10 @@ export default function Home() {
                 <div className="relative lg:-mt-8">
                   <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl shadow-hunter/5">
                     <Image
-                      src="/headshot.jpg"
-                      alt="Lavoisier Cornerstone"
+                      src="/homelab.jpg"
+                      alt="NetOps CCNA Homelab — Cisco router, Catalyst switch, Raspberry Pi, MacBook terminal"
                       fill
-                      className="object-cover object-top"
+                      className="object-cover object-center"
                     />
                   </div>
                   {/* Decorative element */}
