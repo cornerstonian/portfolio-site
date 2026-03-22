@@ -220,7 +220,7 @@ export default function Home() {
               </a>
             ))}
             <a
-              href="mailto:netcloudsec@proton.me"
+              href="mailto:vois.cornerstone@gmail.com"
               className="ml-2 px-6 py-2.5 bg-hunter text-white text-sm font-semibold rounded-full hover:bg-hunter-dark transition-all duration-300 hover:shadow-lg hover:shadow-hunter/20 hover:-translate-y-0.5"
             >
               Hire Me
@@ -259,7 +259,7 @@ export default function Home() {
                   </a>
                 ))}
                 <a
-                  href="mailto:netcloudsec@proton.me"
+                  href="mailto:vois.cornerstone@gmail.com"
                   className="mt-2 w-full text-center px-6 py-3 bg-hunter text-white font-semibold rounded-full"
                 >
                   Hire Me
@@ -328,7 +328,7 @@ export default function Home() {
 
               <motion.div variants={staggerItem} className="flex flex-wrap items-center gap-4 mb-10">
                 <a
-                  href="mailto:netcloudsec@proton.me"
+                  href="mailto:vois.cornerstone@gmail.com"
                   className="group inline-flex items-center gap-2 px-8 py-4 bg-hunter text-white font-semibold rounded-full hover:bg-hunter-dark transition-all duration-300 hover:shadow-xl hover:shadow-hunter/25 hover:-translate-y-0.5"
                 >
                   <Mail size={18} />
@@ -360,7 +360,7 @@ export default function Home() {
                   <Github size={20} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/voiscornerstone/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#6b7280] hover:text-hunter transition-colors duration-300"
@@ -369,7 +369,7 @@ export default function Home() {
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="mailto:netcloudsec@proton.me"
+                  href="mailto:vois.cornerstone@gmail.com"
                   className="text-[#6b7280] hover:text-hunter transition-colors duration-300"
                   aria-label="Email"
                 >
@@ -884,11 +884,11 @@ export default function Home() {
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
               <a
-                href="mailto:netcloudsec@proton.me"
+                href="mailto:vois.cornerstone@gmail.com"
                 className="group inline-flex items-center gap-3 px-10 py-5 bg-white text-hunter-dark font-bold rounded-full hover:shadow-2xl hover:shadow-white/10 hover:-translate-y-0.5 transition-all duration-300"
               >
                 <Mail size={20} />
-                netcloudsec@proton.me
+                vois.cornerstone@gmail.com
                 <ArrowUpRight
                   size={18}
                   className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -897,7 +897,7 @@ export default function Home() {
 
               <div className="flex items-center gap-3">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/voiscornerstone/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-300"
