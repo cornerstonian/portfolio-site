@@ -147,6 +147,7 @@ const OTHER_PROJECTS = [
     github: 'https://github.com/cornerstonian/netops-ccna-homelab',
     description:
       'Physical homelab built for CCNA preparation — Cisco 2600/1700 routers, Catalyst 3500 XL switch, network-isolated via Linksys E2500 safety buffer. Configured static routing, VTY lines, and planning IOS upgrade via TFTP.',
+    diagram: '/homelab-diagram.jpg',
   },
 ]
 
@@ -735,6 +736,17 @@ export default function Home() {
                     <p className="text-sm text-[#6b7280] leading-relaxed line-clamp-2">
                       {project.description}
                     </p>
+                    {'diagram' in project && project.diagram && (
+                      <div className="mt-4 rounded-xl overflow-hidden border border-hunter/10">
+                        <Image
+                          src={project.diagram as string}
+                          alt="Secure CCNA Lab Integration Diagram"
+                          width={600}
+                          height={400}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    )}
                     {project.live && (
                       <div className="mt-3 flex items-center gap-1 text-xs font-medium text-hunter">
                         <ExternalLink size={12} />
