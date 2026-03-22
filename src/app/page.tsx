@@ -151,17 +151,16 @@ const OTHER_PROJECTS = [
 ]
 
 const CERTS = [
-  { name: 'CompTIA Security+', issuer: 'CompTIA', date: 'Dec 2024', status: 'complete' },
-  { name: 'Azure Fundamentals AZ-900', issuer: 'Microsoft', date: 'Apr 2025', status: 'complete' },
-  { name: 'Google IT Support Professional', issuer: 'Google', date: 'May 2024', status: 'complete' },
+  { name: 'Azure Fundamentals AZ-900', issuer: 'Microsoft', date: '', status: 'complete' },
+  { name: 'CompTIA Security+', issuer: 'CompTIA', date: '', status: 'complete' },
   { name: 'CCNA 200-301', issuer: 'Cisco', date: 'In Progress', status: 'inProgress' },
 ]
 
 const STATS = [
   { label: 'Projects Completed', value: '6+' },
-  { label: 'Certifications', value: '3+CCNA' },
-  { label: 'Cloud Platforms', value: 'Azure+AWS' },
-  { label: 'Focus Area', value: 'Sysadmin/IT' },
+  { label: 'Certifications', value: '2 + CCNA' },
+  { label: 'Cloud Platforms', value: 'Azure' },
+  { label: 'Focus Area', value: 'Systems Administrator' },
 ]
 
 /* ──────────────────────── DOT GRID COMPONENT ────────────────────────────── */
@@ -288,7 +287,7 @@ export default function Home() {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-hunter" />
             </span>
             <span className="text-xs md:text-sm font-medium text-hunter-dark tracking-wide">
-              Available for Sysadmin / IT Roles — Houston · Dallas · Austin · Waco
+              Available for Systems Administrator / IT Roles — Houston · Dallas · Austin · Waco
             </span>
           </div>
         </motion.div>
@@ -402,7 +401,7 @@ export default function Home() {
                   />
                 </div>
 
-                {/* Floating credential badge */}
+                {/* Floating credential badge — AZ-900 bottom-left */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -410,17 +409,17 @@ export default function Home() {
                   className="absolute -bottom-6 -left-8 sm:-left-12 bg-white rounded-xl shadow-xl shadow-hunter/10 px-5 py-3.5 border border-hunter/5"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-hunter-pale flex items-center justify-center">
-                      <Shield size={20} className="text-hunter" />
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#c8a96e' }}>
+                      <Cloud size={20} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-[#1a1a1a]">Security+ Certified</p>
-                      <p className="text-[11px] text-[#6b7280]">CompTIA · Dec 2024</p>
+                      <p className="text-xs font-bold text-[#1a1a1a]">AZ-900 Certified</p>
+                      <p className="text-[11px] text-[#6b7280]">Microsoft Azure</p>
                     </div>
                   </div>
                 </motion.div>
 
-                {/* Second floating badge */}
+                {/* Second floating badge — Security+ top-right */}
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -428,12 +427,12 @@ export default function Home() {
                   className="absolute -top-3 -right-8 sm:-right-10 bg-white rounded-xl shadow-xl shadow-hunter/10 px-4 py-3 border border-hunter/5"
                 >
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#c8a96e' }}>
-                      <Cloud size={16} className="text-white" />
+                    <div className="w-8 h-8 rounded-full bg-hunter-pale flex items-center justify-center">
+                      <Shield size={16} className="text-hunter" />
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-[#1a1a1a]">AZ-900</p>
-                      <p className="text-[11px] text-[#6b7280]">Microsoft Azure</p>
+                      <p className="text-xs font-bold text-[#1a1a1a]">Security+</p>
+                      <p className="text-[11px] text-[#6b7280]">CompTIA</p>
                     </div>
                   </div>
                 </motion.div>
@@ -822,7 +821,7 @@ export default function Home() {
                       >
                         {isComplete ? '✓ Earned' : '◎ In Progress'}
                       </span>
-                      <span className="text-xs text-[#6b7280]">· {cert.date}</span>
+                      {cert.status === 'inProgress' && <span className="text-xs text-[#6b7280]">· {cert.date}</span>}
                     </div>
                   </motion.div>
                 )
@@ -868,7 +867,7 @@ export default function Home() {
               variants={staggerItem}
               className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-4"
             >
-              Open to sysadmin, IT operations, and cloud infrastructure roles in the Houston,
+              Open to Systems Administrator, IT operations, and cloud infrastructure roles in the Houston,
               Dallas, Austin, or Waco area.
             </motion.p>
 
