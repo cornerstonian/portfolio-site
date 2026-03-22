@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { 
   Server, Shield, Cloud, Terminal, GitBranch, 
-  Network, Award, ExternalLink, Mail, Linkedin, 
+  Network, ExternalLink, Mail, Linkedin, 
   Github, ChevronDown, Menu, X, CheckCircle
 } from 'lucide-react'
 
@@ -214,14 +215,14 @@ function About() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className={`transition-all duration-700 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
             <div className="relative">
-              <div className="w-full aspect-square max-w-sm bg-gradient-to-br from-hunter-pale to-green-100 rounded-2xl flex items-center justify-center border border-green-200">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 bg-hunter rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white font-display font-bold text-3xl">LC</span>
-                  </div>
-                  <p className="text-hunter font-semibold text-sm">Lavoisier Cornerstone</p>
-                  <p className="text-gray-500 text-xs mt-1">Spring, TX</p>
-                </div>
+              <div className="w-full aspect-square max-w-sm rounded-2xl overflow-hidden border-4 border-hunter/20 shadow-xl relative">
+                <Image
+                  src="/headshot.jpg"
+                  alt="Lavoisier Cornerstone"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-hunter text-white rounded-xl px-4 py-3 text-xs font-semibold shadow-lg">
                 Security+ · AZ-900 · Google IT
