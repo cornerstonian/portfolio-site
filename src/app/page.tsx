@@ -160,7 +160,7 @@ const STATS = [
   { label: 'Projects Completed', value: '6+' },
   { label: 'Certifications', value: '2 + CCNA' },
   { label: 'Cloud Platforms', value: 'Azure' },
-  { label: 'Focus Area', value: 'Systems Administrator' },
+  { label: 'Focus Area', value: 'IT & Network' },
 ]
 
 /* ──────────────────────── DOT GRID COMPONENT ────────────────────────────── */
@@ -287,7 +287,7 @@ export default function Home() {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-hunter" />
             </span>
             <span className="text-xs md:text-sm font-medium text-hunter-dark tracking-wide">
-              Available for Systems Administrator / IT Roles — Houston · Dallas · Austin · Waco
+              Available for IT & Network Roles — Houston · Dallas · Austin · Waco
             </span>
           </div>
         </motion.div>
@@ -305,7 +305,7 @@ export default function Home() {
                 variants={staggerItem}
                 className="font-mono text-sm text-hunter tracking-[0.2em] uppercase mb-4"
               >
-                Systems & Infrastructure Professional
+                IT & Network Professional
               </motion.p>
 
               <motion.h1
@@ -867,7 +867,7 @@ export default function Home() {
               variants={staggerItem}
               className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-4"
             >
-              Open to Systems Administrator, IT operations, and cloud infrastructure roles in the Houston,
+              Open to IT & Network, systems administration, and cloud infrastructure roles in the Houston,
               Dallas, Austin, or Waco area.
             </motion.p>
 

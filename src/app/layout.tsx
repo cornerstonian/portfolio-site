@@ -21,7 +21,7 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Lavoisier Cornerstone | Systems & Infrastructure',
+  title: 'Lavoisier Cornerstone | IT & Network Professional',
   description: 'IT professional specializing in systems administration, cloud infrastructure, and network operations. Security+, AZ-900, Google IT certified.',
   keywords: ['sysadmin', 'IT', 'cloud', 'Azure', 'AWS', 'Active Directory', 'ServiceNow', 'CCNA'],
 }
