@@ -516,6 +516,20 @@ export default function Home() {
                     systems, and closing the gap between certification knowledge and real-world
                     implementation.
                   </p>
+                  <p>
+                    I stay current deliberately. I built an automated RSS pipeline using IFTTT and
+                    Zapier that delivers daily IT and cybersecurity news directly to a Telegram
+                    channel — staying informed without fragmenting study time. I&apos;ve read
+                    <em> The Phoenix Project</em>, <em>The Unicorn Project</em>, and{' '}
+                    <em>Project Zero Trust</em> to understand how IT operations and security
+                    strategy function inside real organizations.
+                  </p>
+                  <p>
+                    My priority in any new role is simple: spend the first 90 days understanding
+                    the team&apos;s processes, escalation paths, documentation standards, and the
+                    business impact of the systems I support — and earn trust through consistency
+                    and accuracy before seeking to improve anything.
+                  </p>
                 </div>
               </motion.div>
             </div>
